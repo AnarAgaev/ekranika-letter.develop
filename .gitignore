@@ -1,0 +1,8 @@
+# Ignore node modules files and directories
+node_modules/**/*
+
+# Ignore preproduction directory
+build/**/*
+
+# Ignore idea dirrectory
+.idea/**/*
