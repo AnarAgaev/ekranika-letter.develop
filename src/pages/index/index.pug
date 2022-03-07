@@ -8,43 +8,334 @@ block variables
     - let title       = 'Write the page title here'
 
 block content
-    center(style='background-color:#E1E1E1;')
-        table#bodyTable(
-            border='0'
-            cellpadding='0'
-            cellspacing='0'
-            height='100%'
-            width='100%'
-            style='table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;')
-            tr
-                td#bodyCell(align='center' valign='top')
-                    // EMAIL HEADER //
-                    table#emailHeader(bgcolor='#E1E1E1' border='0' cellpadding='0' cellspacing='0' width='500')
-                        tr
-                            td(align='center' valign='top')
-                                table(border='0' cellpadding='0' cellspacing='0' width='100%')
-                                    tr
-                                        td(align='center' valign='top')
+    center
+        table.table-body(
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            height="auto"
+            width="600"
+            background="https://ekranika.ru/letter/img/background.jpg"
+            style="border-collapse: collapse; border-collapse: collapse; background-color: #000000; table-layout: fixed; max-width:600px !important; width: 600px !important; min-width: 600px !important; padding: 0; margin: 0;")
+            tbody
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- HEADER
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            height="auto"
+                            width="600"
+                            style="border-collapse: collapse; margin-top: 44px; margin-bottom: 40px; border-collapse: collapse;")
+                            tbody
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: 100%; height: auto")
+                                        img(src="https://ekranika.ru/letter/img/logo.png" alt="" border="0" width="169" height="123" style="display: block; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding-top: 43px; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 100%; height: auto")
+                                        img(src="https://ekranika.ru/letter/img/header.png" alt="" border="0" width="330" height="27" style="display: block; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
 
-                    // EMAIL BODY //
-                    table#emailBody(bgcolor='#FFFFFF' border='0' cellpadding='0' cellspacing='0' width='500')
-                        // MODULE ROW //
-                        //
-                          To move or duplicate any of the design patterns
-                          in this email, simply move or copy the entire
-                          MODULE ROW section for each content block.
-                        tr
-                            td(align='center' valign='top')
-                                table(border='0' cellpadding='0' cellspacing='0' width='100%' style='color:#FFFFFF;' bgcolor='#3498db')
-                                    tr
-                                        td(align='center' valign='top')
-                                            table.flexibleContainer(border='0' cellpadding='0' cellspacing='0' width='500')
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding-top: 37px; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 100%; height: auto")
+                                        h2(style="-webkit-text-size-adjust: none; display: block; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: bold; font-size: 18px; line-height: 18px;color: #13A5BE; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;")
+                                            | Lorem Ipsum
+                                        p(style="-webkit-text-size-adjust: none; display: block; width: 490px; height: auto; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; text-align: left; color: #FFFFFF; margin: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 0; padding-left: 0px;")
+                                            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- PRODUCTS
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            background="https://ekranika.ru/letter/img/prod-background.png"
+                            style="border-collapse: collapse; margin: 0px; border: none;")
+                            tbody
+                                //- PRODUCTS HEADER
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: 100%; height: auto")
+                                        h2(style="-webkit-text-size-adjust: none; display: block; position: relative; width: 100%; height: auto; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 13px; line-height: 21px; text-align: center; text-transform: uppercase; color: #FFFFFF; padding-top: 15px; padding-bottom: 19px; padding-left: 0px; padding-right: 0px; text-shadow: 1.14685px 1.14685px 0px rgba(0, 0, 0, 0.25); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;")
+                                            | У нас можете приобрести оптом и в розницу продукцию
+
+                                //- PRODUCTS LIST
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: 490px; height: auto;")
+                                        table(
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="490"
+                                            height="auto"
+                                            style="border-collapse: collapse; margin: 0px;")
+                                            tbody
                                                 tr
-                                                    td.flexibleContainerCell(align='center' valign='top' width='500')
-                                                        table(border='0' cellpadding='30' cellspacing='0' width='100%')
-                                                            tr
-                                                                td.textContent(align='center' valign='top')
-                                                                    h1(style='color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;') Introduction header
-                                                                    h2(style='text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#205478;line-height:135%;') Subheader introduction
-                                                                    div(style='text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#FFFFFF;line-height:135%;')
-                                                                        | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: auto; height: 0px; position: relative;")
+                                                        img(src="https://ekranika.ru/letter/img/prod-first.png" alt="" border="0" width="140" height="140" style="display: block; position: relative; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: 140px; width: 140px; line-height: 100%;")
+
+                                                    td(align="center" valign="middle" style="margin: 0; padding: 0; width: auto; height: 0px; position: relative;")
+                                                        img(src="https://ekranika.ru/letter/img/prod-second.png" alt="" border="0" width="140" height="140" style="display: block; position: relative; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: 140px; width: 140px; line-height: 100%;")
+
+                                                    td(align="right" valign="middle" style="margin: 0; padding: 0; width: auto; height: 0px; position: relative;")
+                                                        img(src="https://ekranika.ru/letter/img/prod-third.png" alt="" border="0" width="140" height="140" style="display: block; position: relative; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: 140px; width: 140px; line-height: 100%;")
+
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- CONSULTATION
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            style="border-collapse: collapse; margin-top: 44px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;")
+                            tbody
+                                //- CONSULTATION HEADER
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: 100%; height: auto")
+                                        h2(style="-webkit-text-size-adjust: none; display: block; position: relative; width: 100%; height: auto; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px; text-align: center; text-transform: uppercase; color: #13A5BE; padding-top: 0px; padding-bottom: 15px; padding-left: 0px; padding-right: 0px; text-shadow: 1.10932px 1.10932px 0px rgba(0, 0, 0, 0.25); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;")
+                                            | получите консультацию
+
+                                //- CONSULTATION LINKS
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: 490px; height: auto")
+                                        table(
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="490"
+                                            height="auto"
+                                            style="border-collapse: collapse; margin: 0px; padding: 0px;")
+                                            tbody
+                                                tr
+                                                    td(align="left" valign="top" style="margin: 0; padding: 0; width: auto; height: auto")
+                                                        a(href="https://wa.me/79201111111" target="_blank" style="display: inline-block; text-decoration: none; cursor: pointer;")
+                                                            img(src="https://ekranika.ru/letter/img/btn-write.png" alt="" border="0" width="225" height="45" style="display: block; width: 225px; height: 45px; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; line-height: 100%;")
+
+                                                    td(align="right" valign="top" style="margin: 0; padding: 0; width: auto; height: auto")
+                                                        a(href="https://ekranika.ru/letter/pdf-example.pdf" target="_blank" style="display: inline-block; text-decoration: none; cursor: pointer;" download)
+                                                            img(src="https://ekranika.ru/letter/img/btn-download.png" alt="" border="0" width="238" height="45" style="display: block; width: 238px; height: 45px; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; line-height: 100%;")
+
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- RENT
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            style="border-collapse: collapse; margin-top: 40px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;")
+                            tbody
+                                //- RENT HEADER
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: 100%; height: auto")
+                                        h2(style="-webkit-text-size-adjust: none; display: block; position: relative; width: 100%; height: auto; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px; text-align: center; text-transform: uppercase; color: #13A5BE; padding-top: 0px; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; text-shadow: 1.10932px 1.10932px 0px rgba(0, 0, 0, 0.25); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;")
+                                            | Оборудование в аренду
+
+                                //- RENT PICTURES
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0;")
+                                        table(
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="526"
+                                            height="auto"
+                                            style="border-collapse: collapse; margin: 0px; padding: 0px;")
+                                            tbody
+                                                tr
+                                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: auto; height: auto")
+                                                        img(src="https://ekranika.ru/letter/img/quangli.png" alt="" border="0" width="227" height="290" style="display: block; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
+                                                        p(style="-webkit-text-size-adjust: none; display: block; width: 213px; height: auto; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; text-align: center; color: #FFFFFF; padding-top: 12px; padding-right: 25px; padding-bottom: 0px; padding-left: 25px; margin: 0px;")
+                                                            | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: auto; height: auto")
+                                                        img(src="https://ekranika.ru/letter/img/absen.png" alt="" border="0" width="227" height="290" style="display: block; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
+                                                        p(style="-webkit-text-size-adjust: none; display: block; width: 213px; height: auto; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; text-align: center; color: #FFFFFF; padding-top: 12px; padding-right: 25px; padding-bottom: 0px; padding-left: 25px; margin: 0px;")
+                                                            | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- LIST
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            style="border-collapse: collapse; margin-top: 49px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; border-top: 1px solid #13A5BE; border-right: none; border-bottom: 1px solid #13A5BE; border-left: none;")
+                            tbody
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding-top: 25px; padding-right: 0; padding-bottom: 26px; padding-left: 0; width: 600px; height: auto")
+
+                                        table(
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="500"
+                                            height="auto"
+                                            style="border-collapse: collapse; margin: 0px; padding: 0px;")
+                                            tbody
+                                                tr
+                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: 63px; height: 70px;")
+                                                        img(src="https://ekranika.ru/letter/img/i-list-first.png" alt="" border="0" width="63" height="63" style="position: relative; display: inline-block; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
+                                                    td(align="left" valign="middle" style="margin: 0; padding-left: 4px; width: auto; height: 70px;")
+                                                        p(style="-webkit-text-size-adjust: none; display: block; margin: 0px; padding: 0px;")
+                                                            span(style="-webkit-text-size-adjust: none; display: block; text-align: left; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px; text-transform: uppercase; color: #13A5BE;")
+                                                                | 40 тонн в месяц
+                                                            span(style="-webkit-text-size-adjust: none; display: block; text-align: left; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; color: #FFFFFF;")
+                                                                | Прямые поставки из Китая на склад
+
+                                                tr
+                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: 63px; height: 70px;")
+                                                        img(src="https://ekranika.ru/letter/img/i-list-second.png" alt="" border="0" width="63" height="63" style="position: relative; display: inline-block; -ms-interpolation-mode: bicubic; outline: none;border: 0; text-decoration: none; height: auto; line-height: 100%;")
+                                                    td(align="left" valign="middle" style="margin: 0; padding-left: 4px; width: auto; height: 70px;")
+                                                        p(style="-webkit-text-size-adjust: none; display: block; margin: 0px; padding: 0px;")
+                                                            span(style="-webkit-text-size-adjust: none; display: block; text-align: left; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px; text-transform: uppercase; color: #13A5BE;")
+                                                                | > 500 квадратных метров
+                                                            span(style="-webkit-text-size-adjust: none; display: block; text-align: left; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; color: #FFFFFF;")
+                                                                | Экранов одинаковых партий для прокатчиков
+
+                                                tr
+                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: 63px; height: 70px;")
+                                                        img(src="https://ekranika.ru/letter/img/i-list-third.png" alt="" border="0" width="63" height="63" style="position: relative; display: inline-block; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
+                                                    td(align="left" valign="middle" style="margin: 0; padding-left: 4px; width: auto; height: 70px;")
+                                                        p(style="-webkit-text-size-adjust: none; display: block; margin: 0px; padding: 0px;")
+                                                            span(style="-webkit-text-size-adjust: none; display: block; text-align: left; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px; text-transform: uppercase; color: #13A5BE;")
+                                                                | Всё для сборки экранов
+                                                            span(style="-webkit-text-size-adjust: none; display: block; text-align: left; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; color: #FFFFFF;")
+                                                                | От болтов до систем управления LED
+
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- CHATBOT
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            style="border-collapse: collapse; margin-top: 40px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;")
+                            tbody
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: auto; height: auto")
+                                        table(
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="490"
+                                            height="auto"
+                                            style="border-collapse: collapse;  margin: 0px; padding: 0px;")
+                                            tbody
+                                                tr
+                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: auto; height: 45px")
+                                                        p(style="-webkit-text-size-adjust: none; display: inline-block; position: relative; height: 45px; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px; color: #FFFFFF; margin: 0; padding-left: 10px;")
+                                                            | Всегда свежий прайс, прошивки и&nbsp;чертежи в нашем чат-боте
+                                                    td(align="right" valign="middle" style="margin: 0; padding: 0; width: auto; height: 45px")
+                                                        a(href="https://wa.me/79201111111" target="_blank" style="display: inline-block; text-decoration: none; cursor: pointer; width: 165px; height: 45px;")
+                                                            img(src="https://ekranika.ru/letter/img/btn-chat.png" alt="" border="0" width="165" height="45" style="display: block; width: 165px; height: 45px; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; line-height: 100%;")
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- CONTACTS
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            style="border-collapse: collapse; margin-top: 35px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;")
+                            tbody
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: auto; height: auto")
+                                        table(
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="490"
+                                            height="auto"
+                                            style="border-collapse: collapse; margin: 0px; padding: 0px;")
+                                            tbody
+                                                tr
+                                                    td(align="left" valign="top" style="margin: 0; padding: 0; width: auto; height: auto;")
+                                                        p(style="-webkit-text-size-adjust: none; display: block; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 19px; color: #FFFFFF; padding: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px;") Сучков Игорь
+                                                        p(style="-webkit-text-size-adjust: none; display: block; position: relative; padding: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px;")
+                                                            a(href="tel:+79771125090" style="-webkit-text-size-adjust: none; text-decoration: none; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 19px; color: #13A5BE;") +7 977 112 50 90
+                                                        p(style="-webkit-text-size-adjust: none; display: block; position: relative; margin: 0px; padding: 0px;")
+                                                            a(href="mailto:sales@ledcapital.ru" style="-webkit-text-size-adjust: none; text-decoration: none; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 19px; color: #13A5BE;") sales@ledcapital.ru
+
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- SUBSCRIBE
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            style="border-collapse: collapse; margin-top: 20px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;")
+                            tbody
+                                tr
+                                    td(align="center" valign="top" style="margin: 0; padding: 0; width: auto; height: auto")
+                                        table(
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="490"
+                                            height="auto"
+                                            style="border-collapse: collapse; margin: 0px; padding: 0px;")
+                                            tbody
+                                                tr
+                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: auto; height: auto;")
+
+                                                        table(
+                                                            border="0"
+                                                            cellpadding="0"
+                                                            cellspacing="0"
+                                                            width="auto"
+                                                            height="auto"
+                                                            style="border-collapse: collapse; margin: 0px; padding: 0px;")
+                                                            tbody
+                                                                tr
+                                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: auto; height: auto;")
+                                                                        p(style="-webkit-text-size-adjust: none; display: inline-block; padding: 0px; margin: 0px; width: auto; height: 40px; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; color: #FFFFFF;")
+                                                                            | Следите
+                                                                            br
+                                                                            | за&nbsp;новостями
+
+                                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: auto; height: auto;")
+                                                                        a(href="https://wa.me/79201111111" target="_blank" style="text-decoration: none; display: inline-block; position: relative; width: 28px; height: 28px; margin-left: 14px; ")
+                                                                            img(src="https://ekranika.ru/letter/img/i-whatsapp.png" alt="" border="0" width="28" height="28" style="display: inline-block; position: relative; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
+
+                                                                    td(align="left" valign="middle" style="margin: 0; padding: 0; width: auto; height: auto;")
+                                                                        a(href="https://ru-ru.facebook.com/" target="_blank" style="text-decoration: none; display: inline-block; position: relative; width: 28px; height: 28px; margin-left: 10px;")
+                                                                            img(src="https://ekranika.ru/letter/img/i-facebook.png" alt="" border="0" width="28" height="28" style="display: inline-block; position: relative; -ms-interpolation-mode: bicubic; outline: none; border: 0; text-decoration: none; height: auto; line-height: 100%;")
+
+
+                                                    td(align="left" valign="middle" width="220" height="auto" style="margin: 0; padding: 0; width: auto; height: auto; width: 220px;")
+                                                        p(style="-webkit-text-size-adjust: none; display: block; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 22px; color: #FFFFFF; padding: 0px; margin: 0px;")
+                                                            | С уважением
+                                                        p(style="-webkit-text-size-adjust: none; display: block; position: relative; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 22px; text-transform: uppercase; color: #13A5BE; padding: 0px; margin: 0px;")
+                                                            | ООО «Лэд капитал»
+
+                tr
+                    td(style="margin: 0; padding: 0; width: 100%; height: auto")
+                        //- FOOTER
+                        table(
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="600"
+                            height="auto"
+                            style="border-collapse: collapse; margin-top: 37px; margin-bottom: 25px; margin-left: 0px; margin-right: 0px;")
+                            tbody
+                                tr
+                                    td(align="left" valign="middle" width="200" height="20" style="margin: 0; padding: 0; width: 200px; height: 20px;")
+                                        hr(width="100%" size="1" color="#13A5BE")
+                                    td(align="center" valign="middle" height="20" style="margin: 0; padding: 0; width: auto; height: 20px;")
+                                        a.class(href="https://www.ledcapital.ru/" target="_blank" style="display: inline-block; position: relative; width: auto; height: 20px; font-family: Verdana, Geneva, sans-serif; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; text-decoration: none; color: #13A5BE; text-align: center; cursor: pointer; margin: 0px; padding: 0px; background-color: #000000;") www.ledcapital.ru
+                                    td(align="right" valign="middle" width="190" height="20" style="margin: 0; padding: 0; width: 190px; height: 20px;")
+                                        hr(width="100%" size="1" color="#13A5BE")

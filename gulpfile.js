@@ -15,35 +15,35 @@ const clean = () => {
  return del('./build');
 }
 
-const buildCss = () => {
-    return src('src/**/main.scss')
-        .pipe(plumber({
-            errorHandler: notify.onError( function(err){
-                return {
-                    title: 'Sass Styles Error',
-                    message: err.message
-                };
-            })
-        }))
-        .pipe(sass())
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['last 2 versions'],
-            cascade: false,
-        }))
-        .pipe(cssbeautify({
-            indent: '    ',
-            openbrace: 'end-of-line',
-            autosemicolon: true
-        }))
-        .pipe(rename({
-            dirname: '',
-            basename: 'style',
-            extname: '.css'
-        }))
-        .pipe(dest('build'))
-        .pipe(plumber.stop())
-        .pipe(browserSync.stream());
-}
+// const buildCss = () => {
+//     return src('src/**/main.scss')
+//         .pipe(plumber({
+//             errorHandler: notify.onError( function(err){
+//                 return {
+//                     title: 'Sass Styles Error',
+//                     message: err.message
+//                 };
+//             })
+//         }))
+//         .pipe(sass())
+//         .pipe(autoprefixer({
+//             overrideBrowserslist: ['last 2 versions'],
+//             cascade: false,
+//         }))
+//         .pipe(cssbeautify({
+//             indent: '    ',
+//             openbrace: 'end-of-line',
+//             autosemicolon: true
+//         }))
+//         .pipe(rename({
+//             dirname: '',
+//             basename: 'style',
+//             extname: '.css'
+//         }))
+//         .pipe(dest('build'))
+//         .pipe(plumber.stop())
+//         .pipe(browserSync.stream());
+// }
 
 const buildHtml = () => {
     return src(['src/pages/**/index.pug'])
@@ -76,14 +76,14 @@ const server = () => {
 }
 
 // Watchers
-watch('src/**/*.scss', buildCss);
+// watch('src/**/*.scss', buildCss);
 watch('src/**/*.pug', buildHtml);
 
 // Build project
 exports.default = series(
     clean,
     parallel(
-        buildCss,
+        // buildCss,
         buildHtml
     ),
     server

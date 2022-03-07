@@ -1,7 +1,7 @@
 //- Variables from pages
 block variables
 
-doctype html PUBLIC ("-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd")
+doctype html
 html(lang="ru" xmlns="http://www.w3.org/1999/xhtml")
     head
         meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
@@ -14,96 +14,8 @@ html(lang="ru" xmlns="http://www.w3.org/1999/xhtml")
         meta(name="keywords" content=keywords)
         title #{title}
 
-        style(type='text/css').
-            /* RESET STYLES */
-            html {
-                background-color: #FFFFFF;
-                margin: 0;
-                padding: 0;
-            }
+        style(type="text/css")
+            include ../../templates/default/scss/reset.css
 
-            body,
-            #bodyTable,
-            #bodyCell {
-                height: 100% !important;
-                margin: 0;
-                padding: 0;
-                width: 100% !important;
-                font-family: Verdana, Geneva, sans-serif;
-            }
-
-            table {
-                border-collapse: collapse;
-            }
-
-            table[id=bodyTable] {
-                width: 100% !important;
-                margin: auto;
-                max-width: 500px !important;
-                color: #FFFFFF;
-                font-weight: normal;
-            }
-
-            img, a img {
-                border: 0;
-                outline: none;
-                text-decoration: none;
-                height: auto;
-                line-height: 100%;
-            }
-
-            a {
-                text-decoration: none !important;
-                border-bottom: 1px solid;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                color: #FFFFFF;
-                font-weight: normal;
-                font-family: Verdana, Geneva, sans-serif;
-                font-size: 20px;
-                line-height: 125%;
-                text-align: Left;
-                letter-spacing: normal;
-                margin-top: 0;
-                margin-right: 0;
-                margin-bottom: 10px;
-                margin-left: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-            /* Force Hotmail/Outlook.com to display line heights normally. */
-            table, td {
-                mso-table-lspace: 0pt;
-                mso-table-rspace: 0pt;
-            }
-
-            /* Force Outlook 2007 and up to provide a "view in browser" message. */
-            img {
-                -ms-interpolation-mode: bicubic;
-                display: block;
-                outline: none;
-                text-decoration: none;
-            }
-
-            /* Force IE to smoothly render resized images. */
-            body, table, td, p, a, li, blockquote {
-                -ms-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-                font-weight: normal !important;
-            }
-
-        //if mso 12
-        style(type='text/css').
-            .flexibleContainer{display:block !important; width:100% !important;}
-        //if mso 14
-        style(type='text/css').
-            .flexibleContainer{display:block !important; width:100% !important;}
-
-        link(rel="stylesheet" href="style.css" type="text/css")
-
-        body
+        body(style="height: 100%; margin: 0; padding: 0; width: 100%; font-family: Verdana, Geneva, sans-serif;")
             block content

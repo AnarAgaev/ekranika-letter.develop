@@ -1,0 +1,12 @@
+/* RESET STYLES */
+/* Force Hotmail/Outlook.com to display line heights normally. */
+table, td {
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+/* Force IE to smoothly render resized images. */
+body, table, td, p, a, li, blockquote {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
